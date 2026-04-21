@@ -88,6 +88,22 @@ body {
     margin-bottom: 8px;
     font-size: 16px;
     color: #333;
+    opacity: 0;
+    transform: translateY(8px);
+    animation: feature-fade-in 0.4s ease-out forwards;
+}
+
+.features-list li:nth-child(1) { animation-delay: 0.15s; }
+.features-list li:nth-child(2) { animation-delay: 0.30s; }
+.features-list li:nth-child(3) { animation-delay: 0.45s; }
+.features-list li:nth-child(4) { animation-delay: 0.60s; }
+.features-list li:nth-child(5) { animation-delay: 0.75s; }
+
+@keyframes feature-fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .checkmark {
